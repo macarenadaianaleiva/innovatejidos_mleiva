@@ -26,7 +26,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 35px;
+        padding-top: 15px;
         transition: all 0.4s linear;
         text-shadow: 2px 2px 4px #000000;
     }
@@ -40,13 +40,14 @@
     
 .header__navegacion{
     width: 98vw;
-    height: 30vh;
-    margin-bottom: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 65px;
     background: $color-principal;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     ul{
         list-style: none;
-        text-align: right;
+        text-align:right;
+
     }
 }
 
@@ -56,13 +57,12 @@
 }
 
 .header__menu > li > a{
-    display: block;
     padding: 15px 20px;
     color:#353535;
-    /*font-family: ;*/
     text-decoration: none;
     letter-spacing: 5px;
     font-size: 16px;
+    
     
 }
 
@@ -381,7 +381,7 @@ body {
 .container>.content {
     /*el content abarca 3 columnas*/
     grid-column: span 3;
-    grid-row: span 4;
+    grid-row: span 3;
 }
 
 .content>.article {
@@ -398,9 +398,9 @@ body {
 /*entrando */
 .container>.sidebar {
     grid-column: span 2;
-    grid-row: span 4;
+    grid-row: span 3;
     background:$subtitulos-color;
-    color: #ffffff;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -441,40 +441,31 @@ body {
     .header__navegacion{
         display: flex;
         flex-direction: column;
-        height: 35vh;
-        margin-bottom: 5px;
-  
-    }
-
-    footer p{
-        font-size:5px ;
-    }
-
-    footer h2{
-        font-size: 10px;
-    }
-
-    
-    .header__menu > li > a{
-        padding: 5px 10px;
         
     }
-
-
-    .header__menu > li{
-        position: relative;
+    .header__navegacion .header__menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
-    .header__menu > li > a{
-        font-size: 9px;
+    .container{
+        display: flex;
+        flex-direction: column;
     }
+
+
+    form{
+        width: 100%;
+    }
+
+
 
     .header__logo a{
-        font-size: 15px;
+        font-size:24px;
+
     }
 
     .padre{
@@ -483,7 +474,7 @@ body {
         width: 200px;
         
     }
- 
+    
 }
 
 /*animaciones*/
