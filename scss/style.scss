@@ -36,8 +36,7 @@
     color:yellow;
     text-shadow: 2px 2px 4px #000000;
 }
-
-    
+ 
 .header__navegacion{
     opacity: 0.8;
     width: 98vw;
@@ -128,15 +127,11 @@
         padding: 5px;
         margin: 20px;
         width: 350px;  
-        border: 2px solid #dfe6e9;
+        border: 2px solid white;
     }  
 }
 
-img{
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px;
-}
+
 
 .imagenes__ruanas div img{
     transition:transform .8s;
@@ -160,9 +155,10 @@ img{
 }
 
 #ruanas{
-    color: $subtitulos-color;
+    color: white;
     padding-top: 30px;
     font-size: 30px;
+    text-transform:uppercase;
 }
 
 #polerones{
@@ -198,11 +194,30 @@ h1{
 
 .footer__noWrap {
     border-bottom: black 1px solid;
-    img{
-        width: 100px;
-    }
 }
+
+.socialUno{
+    width: 70px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+.socialDos{
+    @extend .socialUno
+}
+
+.socialTres{
+    @extend .socialUno
+
+}
+.socialUno{
+        transition:transform .7s;
+    }
     
+.socialUno:hover{
+        transform:scale(1.1);
+    }
 
 
 /*contacto*/
@@ -313,9 +328,6 @@ h3{
     border: 1px solid black;
     border-radius: 6px;
     background: rgba(226, 219, 219, 0.3);
-    
-   
-   
 }
 
 .masTips{
@@ -336,7 +348,7 @@ h3{
     font-size: 20px;
 }
 
-/*flexbox en cuidado de las prendas*/
+/*flexbox en tips*/
 .padre{
     display: flex;
     flex-direction:row;
@@ -412,7 +424,7 @@ body{
 .content .article p {
     padding: 10px;
 }
-/*entrando */
+
 .container>.sidebar {
     grid-column: span 2;
     grid-row: span 3;
@@ -488,8 +500,6 @@ body{
         width: 100%;
     }
 
-
-
     .header__logo a{
         font-size:24px;
 
@@ -526,10 +536,15 @@ body{
 
     .footer__noWrap {
         border-bottom: black 1px solid;
-        img{
-            width: 70px;
-        }
     }
+
+    .socialUno{
+        width: 40px;
+        padding-right: 5px;
+        padding-left: 5px;
+        display: inline-block;
+        padding-bottom: 45px;}
+
 
     h1{
         font-size: 30px;
@@ -579,10 +594,7 @@ body.body__tips{
 }
     
 body.body__catalogo{
-    background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-repeat:no-repeat;
-    background-size: cover;
-
-    
+    background-image: url(https://i.pinimg.com/564x/1f/3f/2a/1f3f2ac2d1c0b4386dbda7300b0e8a39.jpg);
+    background-repeat:repeat;  
 }
 
